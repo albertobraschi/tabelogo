@@ -1,0 +1,36 @@
+<h1>Listing requests</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>User</th>
+    <th>Shop</th>
+    <th>Station</th>
+    <th>Category</th>
+    <th>Delete flg</th>
+    <th>Rate</th>
+    <th>Created at</th>
+    <th>Updated at</th>
+  </tr>
+
+<% @requests.each do |request| %>
+  <tr>
+    <td><%=h request.id %></td>
+    <td><%=h request.user_id %></td>
+    <td><%=h request.shop_id %></td>
+    <td><%=h request.station_id %></td>
+    <td><%=h request.category %></td>
+    <td><%=h request.delete_flg %></td>
+    <td><%=h request.rate %></td>
+    <td><%=h request.created_at %></td>
+    <td><%=h request.updated_at %></td>
+    <td><%= link_to 'Show', request %></td>
+    <td><%= link_to 'Edit', edit_request_path(request) %></td>
+    <td><%= link_to 'Destroy', request, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New request', new_request_path %>

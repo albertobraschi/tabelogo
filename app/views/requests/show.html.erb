@@ -1,0 +1,48 @@
+<p>
+  <b>Id:</b>
+  <%=h @request.id %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%=h @request.user_id %>
+</p>
+
+<p>
+  <b>Shop:</b>
+  <%=h @request.shop_id %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%=h @request.station_id %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%=h @request.category %>
+</p>
+
+<p>
+  <b>Delete flg:</b>
+  <%=h @request.delete_flg %>
+</p>
+
+<p>
+  <b>Rate:</b>
+  <%=h @request.rate %>
+</p>
+
+<p>
+  <b>Created at:</b>
+  <%=h @request.created_at %>
+</p>
+
+<p>
+  <b>Updated at:</b>
+  <%=h @request.updated_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_request_path(@request) %> |
+<%= link_to 'Back', requests_path %>

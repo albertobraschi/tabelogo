@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  id: 1
+  user_id: 1
+  shop_id: 1
+  station_id: 1
+  category: MyString
+  delete_flg: 1
+  rate: 1
+  created_at: 2009-05-20 01:05:35
+  updated_at: 2009-05-20 01:05:35
+
+two:
+  id: 2
+  user_id: 1
+  shop_id: 2
+  station_id: 1
+  category: MyString
+  delete_flg: 1
+  rate: 1
+  created_at: 2009-05-20 01:05:35
+  updated_at: 2009-05-20 01:05:35

@@ -1,0 +1,43 @@
+<p>
+  <b>Rcd:</b>
+  <%=h @shop.rcd %>
+</p>
+
+<p>
+  <b>Restaurant name:</b>
+  <%=h @shop.restaurant_name %>
+</p>
+
+<p>
+  <b>Station:</b>
+  <%=h @shop.station_id %>
+</p>
+
+<p>
+  <b>Tabelog url:</b>
+  <%=h @shop.tabelog_url %>
+</p>
+
+<p>
+  <b>Total score:</b>
+  <%=h @shop.total_score %>
+</p>
+
+<p>
+  <b>Taste score:</b>
+  <%=h @shop.taste_score %>
+</p>
+
+<p>
+  <b>Service score:</b>
+  <%=h @shop.service_score %>
+</p>
+
+<p>
+  <b>Mood score:</b>
+  <%=h @shop.mood_score %>
+</p>
+
+
+<%= link_to 'Edit', edit_shop_path(@shop) %> |
+<%= link_to 'Back', shops_path %>

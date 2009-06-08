@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  rcd: 1
+  restaurant_name: MyString
+  station_id: 1
+  tabelog_url: MyString
+  total_score: 1.5
+  taste_score: 1.5
+  service_score: 1.5
+  mood_score: 1.5
+
+two:
+  rcd: 1
+  restaurant_name: MyString
+  station_id: 1
+  tabelog_url: MyString
+  total_score: 1.5
+  taste_score: 1.5
+  service_score: 1.5
+  mood_score: 1.5

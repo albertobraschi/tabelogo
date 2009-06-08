@@ -1,0 +1,34 @@
+<h1>Listing shops</h1>
+
+<table>
+  <tr>
+    <th>Rcd</th>
+    <th>Restaurant name</th>
+    <th>Station</th>
+    <th>Tabelog url</th>
+    <th>Total score</th>
+    <th>Taste score</th>
+    <th>Service score</th>
+    <th>Mood score</th>
+  </tr>
+
+<% @shops.each do |shop| %>
+  <tr>
+    <td><%=h shop.rcd %></td>
+    <td><%=h shop.restaurant_name %></td>
+    <td><%=h shop.station_id %></td>
+    <td><%=h shop.tabelog_url %></td>
+    <td><%=h shop.total_score %></td>
+    <td><%=h shop.taste_score %></td>
+    <td><%=h shop.service_score %></td>
+    <td><%=h shop.mood_score %></td>
+    <td><%= link_to 'Show', shop %></td>
+    <td><%= link_to 'Edit', edit_shop_path(shop) %></td>
+    <td><%= link_to 'Destroy', shop, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New shop', new_shop_path %>
